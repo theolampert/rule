@@ -1,0 +1,118 @@
+/*
+** Break Points
+*/
+large 	= 1600px
+medium 	= 1000px
+small 	= 400px
+
+/*
+** Theme
+*/
+text = #fff
+charcoal = #545454
+light-grey = #CECECE
+salmon = #FF6868
+light-blue = #00C7FF
+dark-blue = #272E3A
+
+.rule
+	font-family Helvetica
+	*
+		margin 0
+		padding 0
+		box-sizing border-box
+	.close-icon
+		width 10px
+		height 10px
+		position absolute
+		top 10px
+		left 12px
+		cursor pointer
+		path
+			fill light-grey
+		&:hover
+			path
+				fill salmon
+	.rule-container
+		box-shadow rgba(0, 0, 0, 0.3) 0px 0px 20px 1px
+		padding 30px 10px 5px 10px
+		z-index 10000
+		margin 0 auto
+		background-color dark-blue
+		position fixed
+		border-top-left-radius 6px
+		border-top-right-radius 6px
+		border-bottom-left-radius 2px
+		border-bottom-right-radius 2px
+		top 0
+		left 0
+		display block
+		width 140px
+		cursor move
+		label
+			-webkit-font-smoothing antialiased
+			font-size 11px
+			line-height 10px
+			font-family Helvetica, Arial, sans-serif
+			font-weight 600
+			text-transform uppercase
+			color #fff
+			display block
+		input
+			font-family Helvetica, Arial, sans-serif
+			-webkit-font-smoothing antialiased
+			border-radius 2px
+			background-color rgba(255,255,255,0.2)
+			border 2px solid rgba(255,255,255,0)
+			display block
+			color #fff
+			font-size 14px
+			font-weight 600
+			width 100%
+			margin 0
+			padding 0
+			height auto
+			margin-top 5px
+			margin-bottom 10px
+			padding 2px
+			&:focus
+				outline none
+				border 2px solid #fff
+				background-color rgba(255,255,255,0.0)
+	.rule-grid
+		z-index 9999
+		padding 0
+		margin 0 auto
+		background-color rgba(0,0,0,0)
+		position fixed
+		top 0
+		left 0
+		right 0
+		border-left 1px dotted #00EAFF
+		border-right 1px dotted #00EAFF
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		justify-content flex-start
+		align-content space-around
+		align-items flex-start
+	.rule-column
+		height 100%
+		position relative
+		display flex
+		flex-grow 1
+		flex-shrink 1
+		flex-basis 0px
+		box-sizing border-box
+		transition all 0.2s ease-in
+	.rule-btn-add-breakpoint
+		width 100%
+		padding 5px
+		margin-bottom 5px
+		border none
+		border-radius 2px
+		background-color #fff
+		color dark-blue
+		font-size 11px
+		text-transform uppercase
+		font-weight 600
