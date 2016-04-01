@@ -34,7 +34,7 @@ class Controls extends React.Component {
 		let displayString = this.props.visible ? 'block' : 'none';
 
 		return (
-			
+
 			<div style={{display:displayString}} className="rule">
 				<Draggable>
 					<div className="rule-container">
@@ -50,12 +50,11 @@ class Controls extends React.Component {
 						<input type="number" onChange={this.handleColNumChange.bind(this)}></input>
 						<label>Gutter</label>
 						<input type="number" onChange={this.handleGutterChange.bind(this)}></input>
-						<button className="rule-btn-add-breakpoint">Add Breakpoint</button>
 					</div>
 				</Draggable>
 				<RulerOverlay grid={this.state}/>
 			</div>
-			
+
 		)
 	}
 }
